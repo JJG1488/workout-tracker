@@ -12,9 +12,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-
-// =================================================================================================== mongoose connection goes here 
-
 mongoose.connect(
     process.env.MONGODB_URI || 'mongodb://localhost/deep-thoughts',
     {
@@ -24,7 +21,6 @@ mongoose.connect(
         useFindAndModify: false
     }
 );
-
 // =================================================================================================== api routes go here
 
 require("./routes/apiRoutes")(app);
