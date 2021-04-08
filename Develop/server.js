@@ -21,7 +21,6 @@ mongoose.connect(
         useFindAndModify: false
     }
 );
-// =================================================================================================== api routes go here
 
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
