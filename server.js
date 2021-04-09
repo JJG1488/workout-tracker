@@ -5,9 +5,6 @@ const db = require("./models");
 const PORT = process.env.PORT || 3000;
 const app = express();
 
-console.log(process.env.MONGODB_URI);
-console.log(process.env);
-
 // =================================================================================================== middleware goes here
 
 app.use(logger("dev"));
