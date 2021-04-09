@@ -14,13 +14,21 @@ app.use(express.static("public"));
 
 mongoose.connect(
     
+    try {
     process.env.MONGODB_URI || 'mongodb://localhost/workout',
-    {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useCreateIndex: true,
-        useFindAndModify: false
-    }
+{
+    useNewUrlParser: true,
+    useUnifiedTopology: true, 
+    useCreateIndex: true,
+    useFindAndModify: false
+}
+}
+
+catch (error) {
+    console.log(error)
+}
+
+
 );
 
 require("./routes/apiRoutes")(app);
