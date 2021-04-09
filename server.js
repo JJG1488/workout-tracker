@@ -14,7 +14,7 @@ app.use(express.static("public"));
 
 mongoose.connect(
     
-    try {
+   
     process.env.MONGODB_URI || 'mongodb://localhost/workout',
 {
     useNewUrlParser: true,
@@ -22,11 +22,9 @@ mongoose.connect(
     useCreateIndex: true,
     useFindAndModify: false
 }
-}
 
-catch (error) {
-    console.log(error)
-}
+
+
 
 
 );
