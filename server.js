@@ -12,6 +12,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
+// myFirstDatabase
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://jg14:PantheraLeo@cluster0.muarw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+client.connect(err => {
+  const collection = client.db("workout").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
 
 mongoose.connect(
 
