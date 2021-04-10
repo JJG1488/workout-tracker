@@ -36,7 +36,7 @@ client.connect(err => {
 
 mongoose.connect(
 
-    process.env.MONGODB_URI || 'mongodb://localhost/workout',
+    process.env.MONGODB_URI || 'mongodb+srv://jg14:XVj7NOQNhoAgZPFH@cluster0.muarw.mongodb.net/test',
 {
     useNewUrlParser: true,
     useUnifiedTopology: true, 
