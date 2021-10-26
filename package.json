@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "homepage": "https://github.com/JJG1488/workout-tracker.git",
+  "homepage": "https://jjg1488.github.io/workout-tracker/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js && gh-pages -d build",
+    "start": "node server.js",
     "watch": "nodemon server.js",
-    "seed": "node seeders/seed.js"
+    "seed": "node seeders/seed.js",
+    "deploy": "gh-pages -d /docs"
+
     
     },
   "author": "",

@@ -10,7 +10,7 @@ This application helps to track the workouts that you are doing.
 
 ![Preview](public/assets/images/image.png)
 
-![Link] (https://https://workout-tracker1488.herokuapp.com/?id=6071ac8910d08c0015d91e90)
+<!-- ![Link] (https://https://workout-tracker1488.herokuapp.com/?id=6071ac8910d08c0015d91e90) -->
 
 ---
 
