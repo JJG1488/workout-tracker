@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "homepage": "https://jjg1488.github.io/workout-tracker/",
+  "homepage": "https://github.com/JJG1488/workout-tracker.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js && gh-pages -d build",
