@@ -9,7 +9,7 @@
     "start": "node server.js",
     "watch": "nodemon server.js",
     "seed": "node seeders/seed.js",
-    "deploy": "gh-pages -d /docs"
+    "deploy": "gh-pages -d ./docs"
 
     
     },
