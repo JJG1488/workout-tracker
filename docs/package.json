@@ -9,7 +9,6 @@
     "start": "node server.js",
     "watch": "nodemon server.js",
     "seed": "node seeders/seed.js",
-    "build": "scripts build",
     "deploy": "gh-pages -d ./docs"
 
     
