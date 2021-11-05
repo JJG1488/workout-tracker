@@ -11,8 +11,8 @@ const app = express();
 app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static("./docs"));
-app.use(express.static("public"));
+// app.use(express.static("./docs"));
+// app.use(express.static("public"));
 
 
 const MongoClient = require('mongodb').MongoClient;
